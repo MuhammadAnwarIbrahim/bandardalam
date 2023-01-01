@@ -32,7 +32,6 @@
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/') ?>>Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/tentang') ?>>Tentang</a></li>
-                    <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/tentang') ?>>Pencarian</a></li>
                     <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/join') ?>>Jadi Mitra</a></li>
                     <li class="nav-item"><a class="nav-link" href=<?= base_url('SearchController') ?>>Cek Ongkir</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Masuk</a></li>

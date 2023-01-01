@@ -23,7 +23,12 @@ class SearchController extends CI_Controller
             'data_tujuan'        => $data_tujuan
         );
 
-        $this->load->view('template/atas');
+        if (!$this->session->userdata('email')) {
+            $this->load->view('template/atas');
+        }else{
+            $this->load->view('user/atasuser');
+        }
+       
         $this->load->view('search', $data , $data_tujuan);
         $this->load->view('template/footer');
         

@@ -29,6 +29,29 @@ class User extends CI_Controller
         $this->load->view('user/pilihmitra');
         $this->load->view('template/footer');
     }
+    public function tentang()
+    {
+        $this->load->view('user/atasuser');
+        $this->load->view('tentang');
+        $this->load->view('template/footer');
+    }
+
+    public function ongkir()
+    {
+        $this->load->view('user/atasuser');
+        $this->load->view('Search');
+        $this->load->view('template/footer');
+    }
+
+    
+    public function home()
+    {
+        $this->load->view('user/atasuser');
+        $this->load->view('template/rumah');
+        $this->load->view('template/footer');
+    }
+
+
 
     public function kelas11()
     {

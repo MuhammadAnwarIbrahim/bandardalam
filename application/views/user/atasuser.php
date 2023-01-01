@@ -30,10 +30,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/') ?>>Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/tentang') ?>>Tentang</a></li>
-                    <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/tentang') ?>>Pencarian</a></li>
-                    <li class="nav-item "><a class="nav-link" href=<?= base_url('welcome/join') ?>>Jadi Mitra</li>
+                    <li class="nav-item"><a class="nav-link" href=<?= base_url('user/home') ?>>Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href=<?= base_url('user/tentang') ?>>Tentang</a></li>
+                    <li class="nav-item "><a class="nav-link" href=<?= base_url('user') ?>>Jadi Mitra</li>
+                    <li class="nav-item"><a class="nav-link" href=<?= base_url('SearchController') ?>>Cek Ongkir</a></li>
                     <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" style=" width: 30px; height:30px" src=<?= base_url('assets/stisla-assets/img/avatar/avatar-2.png') ?> class="rounded-circle border-white">
                             <div class="d-lg-inline-block nav-link text-danger">Hello, <?php
