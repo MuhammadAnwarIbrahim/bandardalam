@@ -35,7 +35,7 @@
                     <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/tentang') ?>>Pencarian</a></li>
                     <li class="nav-item "><a class="nav-link" href=<?= base_url('welcome/join') ?>>Jadi Mitra</li>
                     <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link-lg nav-link-user">
-                            <img alt="image" style=" width: 30px; height:30px" src="./assets/stisla-assets/img/avatar/avatar-2.png" class="rounded-circle border-white">
+                            <img alt="image" style=" width: 30px; height:30px" src=<?= base_url('assets/stisla-assets/img/avatar/avatar-2.png') ?> class="rounded-circle border-white">
                             <div class="d-lg-inline-block nav-link text-danger">Hello, <?php
                                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                                         $this->session->userdata('email')])->row_array();

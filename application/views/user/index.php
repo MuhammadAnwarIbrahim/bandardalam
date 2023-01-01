@@ -36,8 +36,9 @@
                             usahanya. Hanya dengan mendaftar, kami akan memberikan account
                             pengiriman. Staff kantor atau industri mitra hanya membuat pesanan
                             layanan pada aplikasi MyRoket, selanjutnya kami akan menjemput
-                            dan mengatarkannya alamat tujuan tanpa ada batasan berat</p>
-                        <button class="btn btn-mitra btn-xl text-uppercase">Gabung Sekarang</button>
+                            dan mengatarkannya alamat tujuan tanpa ada batasan berat
+                        </p>
+                        <a class="btn btn-mitra btn-xl text-uppercase" href=<?= base_url('user/regmitra') ?>>Gabung Sekarang</a>
                     </div>
                 </div>
             </li>

@@ -7,11 +7,11 @@ class User extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation');
-        // $this->session->set_flashdata('not-login', 'Gagal!');
-        // if (!$this->session->userdata('email')) {
-        //     redirect('welcome');
+        if (!$this->session->userdata('email')) {
+            $this->session->set_flashdata('not-login', 'Gagal!');
+            redirect('welcome');
+        }
     }
-
     public function index()
     {
         $data['user'] = $this->db->get_where('siswa', ['email' =>
@@ -21,12 +21,12 @@ class User extends CI_Controller
         $this->load->view('template/footer');
     }
 
-    public function kelas10()
+    public function regmitra()
     {
         $data['user'] = $this->db->get_where('siswa', ['email' =>
         $this->session->userdata('email')])->row_array();
-
-        $this->load->view('user/kelas10');
+        $this->load->view('user/atasuser');
+        $this->load->view('user/pilihmitra');
         $this->load->view('template/footer');
     }
 
