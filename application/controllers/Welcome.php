@@ -125,6 +125,14 @@ class Welcome extends CI_Controller
         $this->load->view('template/footer');
     }
 
+    public function ongkir()
+    {
+        $this->load->view('template/atas');
+        $this->load->view('Search');
+        $this->load->view('template/footer');
+    }
+
+
     public function join()
     {
         $this->load->view('template/atas');

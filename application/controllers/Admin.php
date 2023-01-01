@@ -16,7 +16,7 @@ class Admin extends CI_Controller
     public function index()
     {
         $data['user'] = $this->db->get_where('admin', ['email' =>
-            $this->session->userdata('email')])->row_array();
+        $this->session->userdata('email')])->row_array();
 
         $this->load->view('admin/index');
     }
@@ -24,7 +24,7 @@ class Admin extends CI_Controller
     public function about_developer()
     {
         $data['user'] = $this->db->get_where('admin', ['email' =>
-            $this->session->userdata('email')])->row_array();
+        $this->session->userdata('email')])->row_array();
 
         $this->load->view('admin/about_developer');
     }
@@ -32,7 +32,7 @@ class Admin extends CI_Controller
     public function about_learnify()
     {
         $data['user'] = $this->db->get_where('admin', ['email' =>
-            $this->session->userdata('email')])->row_array();
+        $this->session->userdata('email')])->row_array();
 
         $this->load->view('admin/about_learnify');
     }
@@ -44,7 +44,7 @@ class Admin extends CI_Controller
         $this->load->model('m_siswa');
 
         $data['user'] = $this->db->get_where('admin', ['email' =>
-            $this->session->userdata('email')])->row_array();
+        $this->session->userdata('email')])->row_array();
 
         $data['user'] = $this->m_siswa->tampil_data()->result();
         $this->load->view('admin/data_siswa', $data);
@@ -122,7 +122,7 @@ class Admin extends CI_Controller
     {
         $this->load->model('m_guru');
         $data['user'] = $this->db->get_where('admin', ['email' =>
-            $this->session->userdata('email')])->row_array();
+        $this->session->userdata('email')])->row_array();
 
         $data['user'] = $this->m_guru->tampil_data()->result();
         $this->load->view('admin/data_guru', $data);
@@ -262,7 +262,7 @@ class Admin extends CI_Controller
         $this->load->model('m_materi');
 
         $data['user'] = $this->db->get_where('admin', ['email' =>
-            $this->session->userdata('email')])->row_array();
+        $this->session->userdata('email')])->row_array();
 
         $data['user'] = $this->m_materi->tampil_data()->result();
         $this->load->view('admin/data_materi', $data);
