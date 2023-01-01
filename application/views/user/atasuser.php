@@ -33,8 +33,8 @@
                     <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/') ?>>Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/tentang') ?>>Tentang</a></li>
                     <li class="nav-item"><a class="nav-link" href=<?= base_url('welcome/tentang') ?>>Pencarian</a></li>
-                    <li class="nav-item "><a class="nav-link" href=<?= base_url('welcome/join') ?>>Jadi Mitra</a></li>
-                    <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                    <li class="nav-item "><a class="nav-link" href=<?= base_url('welcome/join') ?>>Jadi Mitra</li>
+                    <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" style=" width: 30px; height:30px" src="./assets/stisla-assets/img/avatar/avatar-2.png" class="rounded-circle border-white">
                             <div class="d-lg-inline-block nav-link text-danger">Hello, <?php
                                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
@@ -48,9 +48,6 @@
                             </a>
                         </div>
                     </li>
-
-                    <li class=" nav-item "><a class="nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Log Out</a></li>
-
                 </ul>
             </div>
         </div>
