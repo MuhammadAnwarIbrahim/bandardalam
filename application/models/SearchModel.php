@@ -8,10 +8,8 @@ class SearchModel extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('ongkir');
-        if (!empty($keyword)) {
-            $this->db->where('asal', $keyword);
-            $this->db->where('tujuan',$keyword_tujuan);
-        }
+        $this->db->where('asal', $keyword);
+        $this->db->where('tujuan',$keyword_tujuan);
         return $this->db->get()->result_array();
     }
 }
