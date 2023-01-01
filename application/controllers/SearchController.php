@@ -7,14 +7,24 @@ class SearchController extends CI_Controller
     {
         $this->load->model('SearchModel');
         $keyword = $this->input->get('keyword');
-        $data = $this->SearchModel->ambil_data($keyword);
+        $keyword_tujuan = $this->input->get('keyword_tujuan');
+        $berat = $this->input->get('berat');
+        $data = $this->SearchModel->ambil_data($keyword,$keyword_tujuan);
         $data = array(
             'keyword'    => $keyword,
-            'data'        => $data
+            'data'        => $data,
+            'berat'        => $berat
         );
-        
+
+       
+        $data_tujuan = $this->SearchModel->ambil_data($keyword,$keyword_tujuan);
+        $data_tujuan = array(
+            'keyword_tujuan'    => $keyword_tujuan,
+            'data_tujuan'        => $data_tujuan
+        );
+
         $this->load->view('template/atas');
-        $this->load->view('search', $data);
+        $this->load->view('search', $data , $data_tujuan);
         $this->load->view('template/footer');
         
     }

@@ -14,6 +14,8 @@
                 <form action="<?= base_url('SearchController/index') ?>" method="get">
                     <div class="input-group">
                         <input type="text" class="form-control" name="keyword" placeholder="kota asal...">
+                        <input type="text" class="form-control" name="keyword_tujuan" placeholder="tujuan...">
+                        <input type="text" class="form-control" name="berat" placeholder="Berat...">
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="submit">Cari</button>
                         </span>
@@ -30,9 +32,11 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nama Barang</th>
-                            <th scope="col">Lokasi</th>
+                            <th scope="col">id</th>
+                            <th scope="col">Asal</th>
+                            <th scope="col">Tujuan</th>
+                            <th scope="col">harga</th>
+                            <th scope="col">harga total</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,6 +45,9 @@
                                 <th scope="row"><?= $row['id'] ?></th>
                                 <td><?= $row['asal'] ?></td>
                                 <td><?= $row['tujuan'] ?></td>
+                                <td><?= $row['harga'] ?></td>
+                                <td><?= $row['harga']*$berat ?></td>
+                                
                             </tr>
                         <?php } ?>
                     </tbody>
