@@ -298,7 +298,11 @@
                 </div>
                 <div class="item">
                     <label for="eaddress">Email Address<span>*</span></label>
-                    <input id="eaddress" type="text" name="eaddress" required />
+                    <input id="eaddress" value="<?php
+                                                                                        $data['user'] = $this->db->get_where('siswa', ['email' =>
+                                                                                        $this->session->userdata('email')])->row_array();
+                                                                                        echo $data['user']['email'];
+                                                                                        ?>" type="text" name="eaddress" readonly required />
                 </div>
                 <div class="item">
                     <label for="phone">Phone<span>*</span></label>

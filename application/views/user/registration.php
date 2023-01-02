@@ -25,7 +25,7 @@
         </div>
         <div class="row p-3">
             <div class="col-md-6 mx-auto text-center">
-                <div class="bodymovin" data-icon="<?= base_url('assets/') ?>json/registration-animation.json"></div>
+             <div class="bodymovin" data-icon=<?= base_url('assets/json/registration-animation.json') ?>></div>
             </div>
             <div class="col-md-6 mx-auto my-auto mt--5">
                 <form action="<?= base_url('user/registration_act') ?>" method="post">

@@ -268,3 +268,14 @@
             <script>
                 AOS.init();
             </script>
+<style>
+    #wa {opacity:50%; text-align: center; z-index: 99999; position: fixed; bottom: 40px; right: 30px; cursor: pointer; display: block;} 
+    #wa:hover { opacity:100%; } 
+</style>
+ 
+<div id='wa'>
+    <div class="text-align:center" style="background:white;text-shadow: 1px 2px red;">CHAT ME</div>
+    <a href='http://wa.me/+6281335891676'>
+        <img width='60px' alt='Whatsapp' src='https://i.pinimg.com/originals/79/dc/31/79dc31280371b8ffbe56ec656418e122.png'/>
+    </a>
+</div>

@@ -7,13 +7,11 @@ class User extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation');
-        if (!$this->session->userdata('email')) {
-            $this->session->set_flashdata('not-login', 'Gagal!');
-            redirect('welcome');
-        }
     }
+
     public function index()
     {
+        $this->verif_login();
         $data['user'] = $this->db->get_where('siswa', ['email' =>
         $this->session->userdata('email')])->row_array();
         $this->load->view('user/atasuser');
@@ -21,8 +19,18 @@ class User extends CI_Controller
         $this->load->view('template/footer');
     }
 
+    public function verif_login()
+    {
+        if (!$this->session->userdata('email')) {
+            $this->session->set_flashdata('not-login', 'Gagal!');
+            redirect('welcome');
+        }
+    }
+
+
     public function regmitra()
     {
+        $this->verif_login();
         $data['user'] = $this->db->get_where('siswa', ['email' =>
         $this->session->userdata('email')])->row_array();
         $this->load->view('user/atasuser');
@@ -31,6 +39,7 @@ class User extends CI_Controller
     }
     public function tentang()
     {
+        $this->verif_login();
         $this->load->view('user/atasuser');
         $this->load->view('tentang');
         $this->load->view('template/footer');
@@ -38,6 +47,7 @@ class User extends CI_Controller
 
     public function ongkir()
     {
+        $this->verif_login();
         $this->load->view('user/atasuser');
         $this->load->view('Search');
         $this->load->view('template/footer');
@@ -46,6 +56,7 @@ class User extends CI_Controller
     
     public function home()
     {
+        $this->verif_login();
         $this->load->view('user/atasuser');
         $this->load->view('template/rumah');
         $this->load->view('template/footer');
