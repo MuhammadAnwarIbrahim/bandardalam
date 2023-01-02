@@ -54,7 +54,7 @@
                             tambahan dengan menjadi agen MyRoket. Dengan menjadi
                             mitra Roket POS, bisa menerima jasa layanan pengiriman paket
                             dan kargo dengan system online maupun offline.</p>
-                        <button class="btn btn-mitra btn-xl text-uppercase">Gabung Sekarang</button>
+                        <a class="btn btn-mitra btn-xl text-uppercase" href=<?= base_url('user/regmitra') ?>>Gabung Sekarang</a>
                     </div>
                 </div>
             </li>
@@ -71,7 +71,7 @@
                             dikeluarkan, hanya memenuhi persayaratan yang diperlukan dan
                             mendapatkan Saldo Rp. 25.000 (duapuluhlima ribu rupiah) dari
                             MyRoket.</p>
-                        <button class="btn btn-mitra btn-xl text-uppercase">Gabung Sekarang</button>
+                    <a class="btn btn-mitra btn-xl text-uppercase" href=<?= base_url('user/regmitra') ?>>Gabung Sekarang</a>
                     </div>
                 </div>
             </li>
@@ -88,7 +88,7 @@
                             tidak ada biaya yang dikeluarkan, hanya memenuhi persayaratan
                             yang diperlukan dan mendapatkan Saldo Rp. 50.000 (limapuluh
                             ribu rupiah) dari MyRoket.</p>
-                        <button class="btn btn-mitra btn-xl text-uppercase">Gabung Sekarang</button>
+                        <a class="btn btn-mitra btn-xl text-uppercase" href=<?= base_url('user/regmitra') ?>>Gabung Sekarang</a>
                     </div>
                 </div>
             </li>

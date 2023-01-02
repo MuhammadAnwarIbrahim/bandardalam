@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>New Member Registration</title>
+    <title>Daftar menjadi Mitra</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <style>
@@ -265,35 +265,27 @@
     <div class="testbox">
         <form action="/">
             <div class="banner">
-                <h1>New Member Registration</h1>
+                <h1>DAFTAR MENJADI MITRA</h1>
             </div>
             <div class="colums">
                 <div class="item">
-                    <label for="fname"> First Name<span>*</span></label>
-                    <input id="fname" type="text" name="fname" required />
+                    <label for="fname">Name<span>*</span></label>
+                    <input id="fname" type="text" name="fname" required value="<?php
+                                                                                        $data['user'] = $this->db->get_where('siswa', ['email' =>
+                                                                                        $this->session->userdata('email')])->row_array();
+                                                                                        echo $data['user']['nama'];
+                                                                                        ?>"  readonly required />/>
                 </div>
                 <div class="item">
-                    <label for="lname"> Last Name<span>*</span></label>
-                    <input id="lname" type="text" name="lname" required />
-                </div>
-                <div class="item">
-                    <label for="address1">Address 1<span>*</span></label>
-                    <input id="address1" type="text" name="address1" required />
-                </div>
-                <div class="item">
-                    <label for="address2">Address 2<span>*</span></label>
-                    <input id="address2" type="text" name="address2" required />
-                </div>
-                <div class="item">
-                    <label for="state">State<span>*</span></label>
-                    <input id="state" type="text" name="state" required />
+                    <label for="kemampuan">kemampuan<span>*</span></label>
+                    <input id="kemampuan" type="text" name="kemampuan" required />
                 </div>
                 <div class="item">
                     <label for="zip">Zip/Postal Code<span>*</span></label>
                     <input id="zip" type="text" name="zip" required />
                 </div>
                 <div class="item">
-                    <label for="city">City<span>*</span></label>
+                    <label for="city">Alamat<span>*</span></label>
                     <input id="city" type="text" name="city" required />
                 </div>
                 <div class="item">
@@ -305,24 +297,28 @@
                                                                                         ?>" type="text" name="eaddress" readonly required />
                 </div>
                 <div class="item">
-                    <label for="phone">Phone<span>*</span></label>
+                    <label for="phone">Nomor Whatsapp<span>*</span></label>
                     <input id="phone" type="tel" name="phone" required />
                 </div>
             </div>
             <div class="question">
-                <label>Membership Type</label>
+                <label>Kemitraan yang di ajukan</label>
                 <div class="question-answer">
                     <div>
                         <input type="radio" value="none" id="radio_1" name="type" />
-                        <label for="radio_1" class="radio"><span>Standard</span></label>
+                        <label for="radio_1" class="radio"><span>Roket Bisnis</span></label>
                     </div>
                     <div>
                         <input type="radio" value="none" id="radio_2" name="type" />
-                        <label for="radio_2" class="radio"><span>Premium</span></label>
+                        <label for="radio_2" class="radio"><span>Roket Pos</span></label>
                     </div>
                     <div>
                         <input type="radio" value="none" id="radio_3" name="type" />
-                        <label for="radio_3" class="radio"><span>Ultimate</span></label>
+                        <label for="radio_3" class="radio"><span>Roket Motor</span></label>
+                    </div>
+                    <div>
+                        <input type="radio" value="none" id="radio_4" name="type" />
+                        <label for="radio_4" class="radio"><span>Roket Mobil</span></label>
                     </div>
                 </div>
             </div>
