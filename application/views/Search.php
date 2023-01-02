@@ -8,8 +8,18 @@
     <div class="container">
         <div class="masthead-heading text-uppercase">MYROKET</div>
         <div class="masthead-subheading">Cek ongkir</div>
+        <script>
+            if (!$this->session->userdata('email')) {
+                <a class="btn btn-primary btn-xl text-uppercase" href="welcome/tentang">Tell Me More</a>;
+            }
+            else{
+                <a class="btn btn-primary btn-xl text-uppercase" href="user/tentang">Tell Me More</a>;
+            }
 
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+           
+            
+        </script>
+        
     </div>
 
 </header>

@@ -8,8 +8,7 @@
     <div class="container">
         <div class="masthead-heading text-uppercase">MYROKET</div>
         <div class="masthead-subheading">TENTANG KAMI</div>
-
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+        <a class="btn btn-primary btn-xl text-uppercase" href=<?= base_url('SearchController') ?>>CEK ONGKIR</a>;
     </div>
 
 </header>
@@ -291,31 +290,31 @@
         <!-- Thumbnail images -->
         <div class="row">
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/1.png') ?> style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            <img class="demo cursor" src=<?= base_url('assets/img/galery/1.png') ?> style="width:100%" onclick="currentSlide(1)" alt="Pengantaran Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/2.png') ?> style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            <img class="demo cursor" src=<?= base_url('assets/img/galery/2.png') ?> style="width:100%" onclick="currentSlide(2)" alt="Proses Pemuatan Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/3.png') ?> style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            <img class="demo cursor" src=<?= base_url('assets/img/galery/3.png') ?> style="width:100%" onclick="currentSlide(3)" alt="Poses Pemuatan Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/4.png') ?> style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            <img class="demo cursor" src=<?= base_url('assets/img/galery/4.png') ?> style="width:100%" onclick="currentSlide(4)" alt="Packing Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/5.png') ?> style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            <img class="demo cursor" src=<?= base_url('assets/img/galery/5.png') ?> style="width:100%" onclick="currentSlide(5)" alt="Pengantaran Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/6.png') ?> style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            <img class="demo cursor" src=<?= base_url('assets/img/galery/6.png') ?> style="width:100%" onclick="currentSlide(6)" alt="Penerimaan barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/7.png') ?> style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            <img class="demo cursor" src=<?= base_url('assets/img/galery/7.png') ?> style="width:100%" onclick="currentSlide(7)" alt="Barang yang selesai di packing">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/8.png') ?> style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            <img class="demo cursor" src=<?= base_url('assets/img/galery/8.png') ?> style="width:100%" onclick="currentSlide(8)" alt="Packing Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/9.png') ?> style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            <img class="demo cursor" src=<?= base_url('assets/img/galery/9.png') ?> style="width:100%" onclick="currentSlide(9)" alt="Packing Barang">
             </div>
         </div>
     </div>

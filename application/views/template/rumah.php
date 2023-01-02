@@ -9,7 +9,7 @@
         <div class="masthead-heading text-uppercase">MYROKET</div>
         <div class="masthead-subheading">Selamat menikmati layanan kami</div>
 
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+        <a class="btn btn-primary btn-xl text-uppercase" href=<?= base_url('SearchController') ?>>CEK ONGKIR</a>
     </div>
 
 </header>
