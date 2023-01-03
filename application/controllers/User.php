@@ -62,26 +62,6 @@ class User extends CI_Controller
         $this->load->view('template/footer');
     }
 
-
-
-    public function kelas11()
-    {
-        $data['user'] = $this->db->get_where('siswa', ['email' =>
-        $this->session->userdata('email')])->row_array();
-
-        $this->load->view('user/kelas11');
-        $this->load->view('template/footer');
-    }
-
-    public function kelas12()
-    {
-        $data['user'] = $this->db->get_where('siswa', ['email' =>
-        $this->session->userdata('email')])->row_array();
-
-        $this->load->view('user/kelas12');
-        $this->load->view('template/footer');
-    }
-
     public function registration()
     {
         $this->load->view('template/atas');
@@ -141,53 +121,5 @@ class User extends CI_Controller
             $this->session->set_flashdata('success-reg', 'Berhasil!');
             redirect(base_url('welcome'));
         }
-    }
-
-    private function _sendEmail($token, $type)
-    {
-        $config = [
-            'protocol' => 'smtp',
-            'smtp_host' => 'ssl://smtp.googlemail.com',
-            'smtp_user' => 'ini email disini',
-            'smtp_pass' => 'Isi Password gmail disini',
-            'smtp_port' => 465,
-            'mailtype' => 'html',
-            'charset' => 'utf-8',
-            'newline' => "\r\n",
-        ];
-
-        $this->email->initialize($config);
-
-        $data = array(
-            'name' => 'syauqi',
-            'link' => ' ' . base_url() . 'welcome/verify?email=' . $this->input->post('email') . '& token' . urlencode($token) . '"',
-        );
-
-        $this->email->from('LearnifyEducations@gmail.com', 'Learnify');
-        $this->email->to($this->input->post('email'));
-
-        if ($type == 'verify') {
-            $link =
-                $this->email->subject('Verifikasi Akun');
-            $body = $this->load->view('template/email-template.php', $data, true);
-            $this->email->message($body);
-        } else {
-        }
-
-        if ($this->email->send()) {
-            return true;
-        } else {
-            echo $this->email->print_debugger();
-            die();
-        }
-    }
-
-    public function pembayaran()
-    {
-        $data['user'] = $this->db->get_where('siswa', ['email' =>
-        $this->session->userdata('email')])->row_array();
-
-        $this->load->view('user/pembayaran');
-        $this->load->view('template/footer');
     }
 }
