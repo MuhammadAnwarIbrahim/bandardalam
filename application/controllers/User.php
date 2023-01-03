@@ -90,7 +90,7 @@ class User extends CI_Controller
         ]);
 
         if ($this->form_validation->run() == false) {
-            $this->load->view('template/nav');
+            $this->load->view('template/atas');
             $this->load->view('user/registration');
             $this->load->view('template/footer');
         } else {
@@ -104,19 +104,8 @@ class User extends CI_Controller
                 'date_created' => time(),
             ];
 
-            //siapkan token
-
-            // $token = base64_encode(random_bytes(32));
-            // $user_token = [
-            //     'email' => $email,
-            //     'token' => $token,
-            //     'date_created' => time(),
-            // ];
 
             $this->db->insert('user', $data);
-            // $this->db->insert('token', $user_token);
-
-            // $this->_sendEmail($token, 'verify');
 
             $this->session->set_flashdata('success-reg', 'Berhasil!');
             redirect(base_url('welcome'));
