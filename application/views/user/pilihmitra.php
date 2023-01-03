@@ -271,7 +271,7 @@
                 <div class="item">
                     <label for="fname">Name<span>*</span></label>
                     <input id="fname" type="text" name="fname" required value="<?php
-                                                                                        $data['user'] = $this->db->get_where('siswa', ['email' =>
+                                                                                        $data['user'] = $this->db->get_where('user', ['email' =>
                                                                                         $this->session->userdata('email')])->row_array();
                                                                                         echo $data['user']['nama'];
                                                                                         ?>"  readonly required />/>
@@ -291,7 +291,7 @@
                 <div class="item">
                     <label for="eaddress">Email Address<span>*</span></label>
                     <input id="eaddress" value="<?php
-                                                                                        $data['user'] = $this->db->get_where('siswa', ['email' =>
+                                                                                        $data['user'] = $this->db->get_where('user', ['email' =>
                                                                                         $this->session->userdata('email')])->row_array();
                                                                                         echo $data['user']['email'];
                                                                                         ?>" type="text" name="eaddress" readonly required />

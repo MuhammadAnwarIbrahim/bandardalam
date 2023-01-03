@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "learnfy");
+$koneksi = mysqli_connect("localhost", "root", "", "myroket");
 
 // Check connection
 if (mysqli_connect_errno()) {

@@ -37,7 +37,7 @@
                     <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" style=" width: 30px; height:30px" src=<?= base_url('assets/stisla-assets/img/avatar/avatar-2.png') ?> class="rounded-circle border-white">
                             <div class="d-lg-inline-block nav-link text-danger">Hello, <?php
-                                                                                        $data['user'] = $this->db->get_where('siswa', ['email' =>
+                                                                                        $data['user'] = $this->db->get_where('user', ['email' =>
                                                                                         $this->session->userdata('email')])->row_array();
                                                                                         echo $data['user']['nama'];
                                                                                         ?></div>

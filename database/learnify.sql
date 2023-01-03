@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `learnify`
+-- Database: `myroket`
 --
 
 -- --------------------------------------------------------
@@ -73,7 +73,7 @@ INSERT INTO `guru` (`nip`, `email`, `nama_guru`, `password`, `nama_mapel`) VALUE
 CREATE TABLE `kelas` (
   `id` int(255) NOT NULL,
   `kelas` varchar(128) NOT NULL,
-  `nama_siswa` varchar(128) NOT NULL
+  `nama_user` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -131,10 +131,10 @@ INSERT INTO `materi` (`id`, `nama_guru`, `nama_mapel`, `video`, `deskripsi`, `ke
 -- --------------------------------------------------------
 
 --
--- Table structure for table `siswa`
+-- Table structure for table `user`
 --
 
-CREATE TABLE `siswa` (
+CREATE TABLE `user` (
   `id` int(64) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
@@ -145,10 +145,10 @@ CREATE TABLE `siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `siswa`
+-- Dumping data for table `user`
 --
 
-INSERT INTO `siswa` (`id`, `nama`, `password`, `email`, `image`, `is_active`, `date_created`) VALUES
+INSERT INTO `user` (`id`, `nama`, `password`, `email`, `image`, `is_active`, `date_created`) VALUES
 (39, 'Syaauqi Zaaidan', '$2y$10$djI2M/FQH2k3H7b6tLK5X.MZG1R.wrARoR6NerH3tsScNnsNCnexa', 'zaidanline67@gmail.com', '73349393_156861225523800_2119508204152772215_n_(1)6.jpg', 1, 1586163321);
 
 -- --------------------------------------------------------
@@ -193,9 +193,9 @@ ALTER TABLE `materi`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `siswa`
+-- Indexes for table `user`
 --
-ALTER TABLE `siswa`
+ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -215,9 +215,9 @@ ALTER TABLE `materi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
--- AUTO_INCREMENT for table `siswa`
+-- AUTO_INCREMENT for table `user`
 --
-ALTER TABLE `siswa`
+ALTER TABLE `user`
   MODIFY `id` int(64) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --

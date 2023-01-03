@@ -12,7 +12,7 @@ class User extends CI_Controller
     public function index()
     {
         $this->verif_login();
-        $data['user'] = $this->db->get_where('siswa', ['email' =>
+        $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
         $this->load->view('user/atasuser');
         $this->load->view('user/index');
@@ -31,7 +31,7 @@ class User extends CI_Controller
     public function regmitra()
     {
         $this->verif_login();
-        $data['user'] = $this->db->get_where('siswa', ['email' =>
+        $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
         $this->load->view('user/atasuser');
         $this->load->view('user/pilihmitra');
@@ -75,7 +75,7 @@ class User extends CI_Controller
             'required' => 'Harap isi kolom username.',
             'min_length' => 'Nama terlalu pendek.',
         ]);
-        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[siswa.email]', [
+        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]', [
             'is_unique' => 'Email ini telah digunakan!',
             'required' => 'Harap isi kolom email.',
             'valid_email' => 'Masukan email yang valid.',
@@ -113,7 +113,7 @@ class User extends CI_Controller
             //     'date_created' => time(),
             // ];
 
-            $this->db->insert('siswa', $data);
+            $this->db->insert('user', $data);
             // $this->db->insert('token', $user_token);
 
             // $this->_sendEmail($token, 'verify');
