@@ -160,7 +160,7 @@
                     </a>
                     <div>
                         <div class="post-meta"><span class="date">Business</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                        <h3><a href="single-post.html">Peta Wilayah Bandar Dalam</a></h3>
+                        <h3><a href=<?= base_url('welcoome/DataWilayah') ?>>Peta Wilayah Bandar Dalam</a></h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni voluptates dolore. Tenetur fugiat voluptates quas.</p>
                         <div class="d-flex align-items-center author">
                             <div class="photo"><img src="assets/img/person-2.jpg" alt="" class="img-fluid"></div>
