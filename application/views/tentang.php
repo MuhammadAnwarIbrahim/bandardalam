@@ -7,7 +7,7 @@
 <header class="masthead">
     <div class="container">
         <div class="masthead-heading text-uppercase">MYROKET</div>
-        <div class="masthead-subheading">TENTANG KAMI</div>
+        <div class="masthead-subheading">TENTANGded KAMI</div>
         <a class="btn btn-primary btn-xl text-uppercase" href=<?= base_url('SearchController') ?>>CEK ONGKIR</a>;
     </div>
 
@@ -134,91 +134,91 @@
 </section>
 <style>
     * {
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     /* Position the image container (needed to position the left and right arrows) */
     .container {
-    position: relative;
+        position: relative;
     }
 
     /* Hide the images by default */
     .mySlides {
-    display: none;
-    text-align: center;
+        display: none;
+        text-align: center;
     }
 
     /* Add a pointer when hovering over the thumbnail images */
     .cursor {
-    cursor: pointer;
+        cursor: pointer;
     }
 
     /* Next & previous buttons */
     .prev,
     .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: red;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: red;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
     }
 
     /* Position the "next button" to the right */
     .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+        right: 0;
+        border-radius: 3px 0 0 3px;
     }
 
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover,
     .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     /* Number text (1/3 etc) */
     .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
     }
 
     /* Container for image text */
     .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
     }
 
     .row:after {
-    content: "";
-    display: table;
-    clear: both;
+        content: "";
+        display: table;
+        clear: both;
     }
 
     /* Six columns side by side */
     .column {
-    float: left;
-    width: 16.66%;
+        float: left;
+        width: 16.66%;
     }
 
     /* Add a transparency effect for thumnbail images */
     .demo {
-    opacity: 0.6;
+        opacity: 0.6;
     }
 
     .active,
     .demo:hover {
-    opacity: 1;
+        opacity: 1;
     }
 </style>
 
@@ -227,19 +227,19 @@
     <!-- Container for the image gallery -->
     <div class="container">
         <div class="text-center">
-                <h2 class="section-heading text-uppercase">GALERY</h2>
+            <h2 class="section-heading text-uppercase">GALERY</h2>
 
         </div>
 
         <!-- Full-width images with number text -->
         <div class="mySlides text-center">
             <div class="numbertext">1 / 9</div>
-            <img src=<?= base_url('assets/img/galery/1.png') ?> >
+            <img src=<?= base_url('assets/img/galery/1.png') ?>>
         </div>
 
         <div class="mySlides">
             <div class="numbertext">2 / 9</div>
-            <img src=<?= base_url('assets/img/galery/2.png') ?> >
+            <img src=<?= base_url('assets/img/galery/2.png') ?>>
         </div>
 
         <div class="mySlides">
@@ -290,66 +290,70 @@
         <!-- Thumbnail images -->
         <div class="row">
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/1.png') ?> style="width:100%" onclick="currentSlide(1)" alt="Pengantaran Barang">
+                <img class="demo cursor" src=<?= base_url('assets/img/galery/1.png') ?> style="width:100%" onclick="currentSlide(1)" alt="Pengantaran Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/2.png') ?> style="width:100%" onclick="currentSlide(2)" alt="Proses Pemuatan Barang">
+                <img class="demo cursor" src=<?= base_url('assets/img/galery/2.png') ?> style="width:100%" onclick="currentSlide(2)" alt="Proses Pemuatan Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/3.png') ?> style="width:100%" onclick="currentSlide(3)" alt="Poses Pemuatan Barang">
+                <img class="demo cursor" src=<?= base_url('assets/img/galery/3.png') ?> style="width:100%" onclick="currentSlide(3)" alt="Poses Pemuatan Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/4.png') ?> style="width:100%" onclick="currentSlide(4)" alt="Packing Barang">
+                <img class="demo cursor" src=<?= base_url('assets/img/galery/4.png') ?> style="width:100%" onclick="currentSlide(4)" alt="Packing Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/5.png') ?> style="width:100%" onclick="currentSlide(5)" alt="Pengantaran Barang">
+                <img class="demo cursor" src=<?= base_url('assets/img/galery/5.png') ?> style="width:100%" onclick="currentSlide(5)" alt="Pengantaran Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/6.png') ?> style="width:100%" onclick="currentSlide(6)" alt="Penerimaan barang">
+                <img class="demo cursor" src=<?= base_url('assets/img/galery/6.png') ?> style="width:100%" onclick="currentSlide(6)" alt="Penerimaan barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/7.png') ?> style="width:100%" onclick="currentSlide(7)" alt="Barang yang selesai di packing">
+                <img class="demo cursor" src=<?= base_url('assets/img/galery/7.png') ?> style="width:100%" onclick="currentSlide(7)" alt="Barang yang selesai di packing">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/8.png') ?> style="width:100%" onclick="currentSlide(8)" alt="Packing Barang">
+                <img class="demo cursor" src=<?= base_url('assets/img/galery/8.png') ?> style="width:100%" onclick="currentSlide(8)" alt="Packing Barang">
             </div>
             <div class="column">
-            <img class="demo cursor" src=<?= base_url('assets/img/galery/9.png') ?> style="width:100%" onclick="currentSlide(9)" alt="Packing Barang">
+                <img class="demo cursor" src=<?= base_url('assets/img/galery/9.png') ?> style="width:100%" onclick="currentSlide(9)" alt="Packing Barang">
             </div>
         </div>
     </div>
 
 
 </section>
-    <script>
-        let slideIndex = 1;
+<script>
+    let slideIndex = 1;
     showSlides(slideIndex);
 
     // Next/previous controls
     function plusSlides(n) {
-    showSlides(slideIndex += n);
+        showSlides(slideIndex += n);
     }
 
     // Thumbnail image controls
     function currentSlide(n) {
-    showSlides(slideIndex = n);
+        showSlides(slideIndex = n);
     }
 
     function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("demo");
-    let captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
     }
 </script>

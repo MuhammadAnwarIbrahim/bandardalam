@@ -6,8 +6,8 @@
 </div>
 <header class="masthead">
     <div class="container">
-        <div class="masthead-heading text-uppercase">MYROKET</div>
-        <div class="masthead-subheading">MARI GABUNG BERSAMA KAMI</div>
+        <div class="masthead-heading text-uppercase">desha</div>
+        <div class="masthead-subheading">xsxx</div>
 
         <a class="btn btn-primary btn-xl text-uppercase" href=<?= base_url('SearchController') ?>>CEK ONGKIR</a>
     </div>
@@ -71,7 +71,7 @@
                             dikeluarkan, hanya memenuhi persayaratan yang diperlukan dan
                             mendapatkan Saldo Rp. 25.000 (duapuluhlima ribu rupiah) dari
                             MyRoket.</p>
-                    <a class="btn btn-mitra btn-xl text-uppercase" href=<?= base_url('user/regmitra') ?>>Gabung Sekarang</a>
+                        <a class="btn btn-mitra btn-xl text-uppercase" href=<?= base_url('user/regmitra') ?>>Gabung Sekarang</a>
                     </div>
                 </div>
             </li>

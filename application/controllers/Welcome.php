@@ -71,27 +71,27 @@ class Welcome extends CI_Controller
         }
     }
 
-    public function tentang()
+    public function DataAparatur()
     {
         $this->load->view('template/atas');
-        $this->load->view('tentang');
+        $this->load->view('aparatur');
         $this->load->view('template/footer');
     }
 
-    public function ongkir()
+    public function DataWilayah()
     {
         $this->load->view('template/atas');
-        $this->load->view('Search');
+        $this->load->view('wilayah');
         $this->load->view('template/footer');
     }
 
-
-    public function join()
+    public function DataLogo()
     {
         $this->load->view('template/atas');
-        $this->load->view('join');
+        $this->load->view('logo');
         $this->load->view('template/footer');
     }
+
 
     public function verify()
     {
